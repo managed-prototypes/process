@@ -7,17 +7,23 @@
 ## Repo Checklist
 
 - Docs
-  - Prerequisites
+  - Goals
+  - Deployment
   - Development
+    - Development Prerequisites
+    - Local Dev Workflow
+    - Deployment Prerequisites
+    - Deployment from local to DO
   - Dev Decisions
   - Updating Dependencies
-  - Deployment
 - Just
 - Dockerfile, docker-compose setup
 - GH Actions
+  - Publish Docker Images, manually and when pushed to main (e.g. pr merged)
+  - Deploy
+  - Destroy
   - Telegram Notification for new PRs
   - Check and Build for PRs
-  - Publish Docker Images, manually
 
 ## Repo Checklist (WIP)
 
