@@ -70,7 +70,7 @@
   - Save keys to password manager
   - Save keys to GitHub org secrets: `DO_S3_ACCESS_KEY`, `DO_S3_SECRET_KEY`
 - DO SSH key:
-  - Create (locally), save as `~/.ssh/managed_prototypes`
+  - Create (locally)
   - Save public and private keys to password manager
   - Save public key to DO team: Settings -> SSH Keys
   - Save private key to GitHub org secrets: `DO_SSH_PVT_KEY`
@@ -82,3 +82,17 @@
     - Click `Generate Token`
   - Save to password manager
   - Save to GitHub org secrets: `DO_PAT_CERT_MANAGER`
+
+### Local setup
+
+- Save SSH private key as `~/.ssh/managed_prototypes`
+- Configure AWS cli, using the `acces key` and `secret key` from DO
+
+  ```sh
+  aws configure --profile managed_prototypes
+  ```
+- Create `local.tfvars` file
+  ```
+  do_pat="..."
+  do_pat_cert_manager="..."
+  ```
