@@ -54,6 +54,17 @@
 ## Bonus: Initial setup, once per DO team (in commercial practice – 1 DO team per separate project)
 
 - DO PAT for terraform: create, save to password manager, save to GitHub org secrets
+  - API -> Tokens -> Generate New Token
+    - Token name: `terraform_github_actions`
+    - Expiration: `No expire` (to prevent it from expiring over time!)
+    - Write: `Yes` (terraform will apply changes)
+    - Click `Generate Token`
 - DO S3 (spaces): create, save keys to password manager, save keys to GitHub org secrets
-- DO SSH key: create locally, save public and private to password manager, save private to GitHub org secrets, save public to DO team (Settings -> SSH Keys)
+- DO SSH key: create locally, save public and private to password manager, save private to GitHub org secrets, save public to DO team
+  - Settings -> SSH Keys
 - DO PAT for cert manager: create, save to password manager, save to GitHub org secrets
+  - API -> Tokens -> Generate New Token
+    - Token name: `cert-manager`
+    - Expiration: `No expire` (to prevent it from expiring over time!)
+    - Write: `Yes` (otherwise, it will hang due to Rate limit exceeded – DO will reject the token)
+    - Click `Generate Token`
