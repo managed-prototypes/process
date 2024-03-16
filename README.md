@@ -50,3 +50,10 @@
   - multiplayer tic tac toe (pvp) with websockets
   - multi-user chat
   - multi-user note-taking app
+
+## Bonus: Initial setup, once per DO team (in commercial practice – 1 DO team per separate project)
+
+- DO PAT for terraform: create, save to password manager, save to GitHub org secrets
+- DO S3 (spaces): create, save keys to password manager, save keys to GitHub org secrets
+- DO SSH key: create locally, save public and private to password manager, save private to GitHub org secrets, save public to DO team (Settings -> SSH Keys)
+- DO PAT for cert manager: create, save to password manager, save to GitHub org secrets
