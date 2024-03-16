@@ -61,7 +61,10 @@
     - Click `Generate Token`
   - Save to password manager
   - Save to GitHub org secrets: Org -> Settings -> Secrets and variables -> Actions
-    - `DO_PAT`
+    - Click `New organization secret`
+    - Name: `DO_PAT`
+    - Value
+    - Repository access: Public repositories (Private are allowed on paid org plans, otherwise just set the secret once per private repo)
 - DO S3 (spaces):
   - Create,
   - Save keys to password manager
