@@ -73,6 +73,7 @@
   - Create (locally)
   - Save public and private keys to password manager
   - Save public key to DO team: Settings -> Security -> SSH Keys
+    - Name: `terraform`
   - Save private key to GitHub org secrets: `DO_SSH_PVT_KEY`
 - DO PAT for cert manager:
   - Create on DO: API -> Tokens -> Generate New Token
