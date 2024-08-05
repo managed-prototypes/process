@@ -72,7 +72,7 @@
 - DO SSH key:
   - Create (locally)
   - Save public and private keys to password manager
-  - Save public key to DO team: Settings -> SSH Keys
+  - Save public key to DO team: Settings -> Security -> SSH Keys
   - Save private key to GitHub org secrets: `DO_SSH_PVT_KEY`
 - DO PAT for cert manager:
   - Create on DO: API -> Tokens -> Generate New Token
@@ -85,13 +85,16 @@
 
 ### Local setup
 
-- Save SSH private key as `~/.ssh/managed_prototypes`
+- Generate SSH private key
+  ```sh
+  ssh-keygen -f ~/.ssh/managed_prototypes_nonprod
+  ```
 - Configure AWS cli, using the `acces key` and `secret key` from DO
 
   ```sh
   aws configure --profile managed_prototypes
   ```
-- Create `local.tfvars` file
+- Create `nonprod.tfvars` file
   ```
   do_pat="..."
   do_pat_cert_manager="..."
