@@ -87,7 +87,7 @@
 
 - Generate SSH private key
   ```sh
-  ssh-keygen -f ~/.ssh/managed_prototypes_nonprod
+  ssh-keygen -q -t ed25519 -f ~/.ssh/managed_prototypes_nonprod -C "terraform@managed_prototypes" -N ""
   ```
 - Configure AWS cli, using the `acces key` and `secret key` from DO
 
